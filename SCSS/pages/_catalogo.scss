@@ -35,3 +35,15 @@ section {
         transform: scale(1.1);
     }
 }
+@media (max-width: 1180px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+}

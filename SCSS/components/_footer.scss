@@ -1,8 +1,31 @@
 .containerfooter {
     text-align: center;
     padding: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px; 
+}
+@media (max-width: 768px) {
+    .col {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+@media (max-width: 576px) {
+    .col {
+        flex-basis: 100%;
+    }
 }
 footer {
+    background-color: #E7DDC5;
+    padding-top: 30px;
     .row {
         div {
             .redes {
@@ -16,3 +39,9 @@ footer {
         }
     }
 }
+.footertitle {
+    font-weight: 800;
+    font-size: 20px;
+    color: #908EC5;
+}
+
